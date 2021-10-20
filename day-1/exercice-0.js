@@ -6,7 +6,6 @@ export const my_sum = (a, b) => {
     else if (b == 0) {
         return 0
     }
-
     else
         return a+b
 }
