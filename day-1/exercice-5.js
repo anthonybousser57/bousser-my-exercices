@@ -1,9 +1,11 @@
 export const my_array_alpha = (str) => {
-    var charArray = [];
-    var i = 0;
-    while (str[i] != undefined) {
-        charArray[i] = str[i];
-        i++;
+    if (typeof str !== 'string') {
+      return [];
     }
-    return charArray;
-}
+  
+    let array = [];
+    for (let i = 0; str[i] !== undefined; i++) {
+      array = [...array, str[i]];
+    }
+    return array;
+  }
