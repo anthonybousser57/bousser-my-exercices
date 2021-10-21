@@ -5,7 +5,7 @@ export const my_array_alpha = (str) => {
   
     let array = [];
     for (let i = 0; str[i] !== undefined; i++) {
-      array = [...array, str[i]];
+        array =  [...array, str[i]]
     }
     return array;
   }
